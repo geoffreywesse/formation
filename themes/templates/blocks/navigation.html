@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation" ng-controller="MenuController as menuCtrl">
+<nav class="navbar navbar-inverted" role="navigation" ng-controller="MenuController as menuCtrl">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -25,7 +25,7 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <form class="navbar-form-inverted" ng-if="menuCtrl.searchEnabled" ng-submit="menuCtrl.onSubmit()" role="form">
+                <form class="navbar-form" ng-if="menuCtrl.searchEnabled" ng-submit="menuCtrl.onSubmit()" role="form">
                     <div class="input-group">
                         <input class="form-control" type="text" ng-model="menuCtrl.query" ng-attr-placeholder="{{rubedo.translate('Search.Label.Search','Search')}}"/>
                             <span class="input-group-btn"><button class="btn btn-default" type="submit">
