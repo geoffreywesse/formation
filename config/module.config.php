@@ -10,10 +10,25 @@ return array(
                     '/css/bootstrap.min.css',
                 ),
                 'js' => array(
+                    "/js/blockDefinitions.js"
                 ),
                 'img' => array(
                 )
             ),
         )
     ),
+    'blocksDefinition' => array(
+        'carouselVideo' => array(
+            'maxlifeTime' => 60,
+            'definitionFile' => realpath(__DIR__ . "/blocks/") . '/carouselVideo.json'
+        ),
+        'contentVideoList' => array(
+            'maxlifeTime' => 60,
+            'definitionFile' => realpath(__DIR__ . "/blocks/") . '/contentVideoList.json'
+        ),
+        'geoSearchResults' => array(
+            'maxlifeTime' => 60,
+            'definitionFile' => realpath(__DIR__ . "/blocks/")  . '/geoSearchResults.json'
+        ),
+    )
 );
